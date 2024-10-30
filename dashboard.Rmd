@@ -1,0 +1,55 @@
+---
+title: "Flex Dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    source: embed
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+```
+
+```{r}
+data(ny_noaa)
+ny_noaa = 
+  ny_noaa |> 
+  separate(date, into = c("year", "month", "day"), convert = TRUE) |> 
+  mutate(
+    tmax = as.numeric(tmax),
+    tmin = as.numeric(tmin)) |>
+  sample_n(40000)
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r, warning = FALSE}
+ny_noaa |>
+  plot_ly(x = ~snow, y = ~snwd, color = ~month, text = ~id, 
+          alpha = .5, type = "scatter", mode = "markers")
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+ny_noaa |>
+  plot_ly(y = ~tmax, x = ~month, type = "box")
+```
+
+### Chart C
+
+```{r}
+ny_noaa |>
+  plot_ly(x = ~year, y = ~prcp, type = "bar")
+```
+
