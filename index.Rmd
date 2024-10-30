@@ -6,6 +6,6 @@ output:
     toc_float: true
 ---
 
-# This website
+# About me
 
-
+Hi! My name is Elliot Kim and I am a second year Master of Public Health candidate in the department of epidemiology at Columbia Mailman School of Public Health. 
