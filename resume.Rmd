@@ -1,5 +1,5 @@
 ---
-title: "My awesome website"
+title: "Resume"
 output: 
   html_document:
     toc: true
@@ -7,6 +7,6 @@ output:
     theme: cerulean
 ---
 
-# This is Jeff's awesome website
+# Resume
 
-![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
+
