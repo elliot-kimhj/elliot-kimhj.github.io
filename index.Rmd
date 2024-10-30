@@ -1,5 +1,5 @@
 ---
-title: "My website"
+title: "Elliot Kim"
 output: 
   html_document:
     toc: true
@@ -8,4 +8,8 @@ output:
 
 # About me
 
+<img src="images/momocat.jpg" style="width:25%">
+
 Hi! My name is Elliot Kim and I am a second year Master of Public Health candidate in the department of epidemiology at Columbia Mailman School of Public Health. 
+
+I also have a cat named Momo!

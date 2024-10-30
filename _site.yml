@@ -1,14 +1,16 @@
-name: "Yay internet!"
+name: "Elliot"
 output_dir: "."
 navbar:
   title: "Home"
   right:
     - text: "Resume"
       href: resume.html
+    - text: "Dashboard"
+      href: dashboard.html  
     - icon: fa-envelope fa-lg
       href: mailto:<ek3376@cumc.columbia.edu>
     - icon: fa-github fa-lg
       href: http://github.com/elliot-kimhj/
 output:
   html_document:
-    theme: cerulean
+    theme: simplex

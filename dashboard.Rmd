@@ -28,7 +28,7 @@ ny_noaa =
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Chart A
+### Scatterplot of Snowfall and Snowdepth by Month and Weather Station ID
 
 ```{r, warning = FALSE}
 ny_noaa |>
@@ -39,14 +39,14 @@ ny_noaa |>
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Chart B
+### Boxplot of Month and Maximum Temperature
 
 ```{r}
 ny_noaa |>
   plot_ly(y = ~tmax, x = ~month, type = "box")
 ```
 
-### Chart C
+### Barplot of Year and Percipitation
 
 ```{r}
 ny_noaa |>

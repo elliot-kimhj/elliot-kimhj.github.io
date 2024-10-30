@@ -6,6 +6,4 @@ output:
     toc_float: true
 ---
 
-# Resume
-
-
+<object data="resume/ElliotKimCV.pdf" width="1000" height="1000" type='application/pdf'/>
